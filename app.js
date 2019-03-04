@@ -11,10 +11,10 @@ client.on('message', message =>{
         return;
    }
 //↓ここに後述のコードをコピペする↓
-   if (message.content === '寒いね') {
+   if (message.content === 'こんにちは') {
         let channel = message.channel;
         let author = message.author.username;
-        let reply_text =`おまんこ`;
+        let reply_text =`こんにちは`;
         message.reply(reply_text)
             .then(message => console.log(`Sent message: ${reply_text}`))
             .catch(console.error);
@@ -22,7 +22,7 @@ client.on('message', message =>{
     }
     if (message.content.match(/discord.gg/)) {
         message.delete(100)
-   }
+    }
 //↑ここに後述のコードをコピペする↑
 });
 client.login(token);
